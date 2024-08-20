@@ -10,11 +10,10 @@ image.src = restaurantImage;
 const paragraph = document.createElement("p");
 paragraph.innerText = 'This restaurant is the best!'
 
-const mainContent = document.getElementById("content");
-mainContent.appendChild(heading);
-mainContent.appendChild(image);
-mainContent.appendChild(paragraph);
+const elements = [heading, image, paragraph];
+
+return {elements}
 
 })();
 
-export default home;
+export default home.elements;

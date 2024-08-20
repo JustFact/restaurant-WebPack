@@ -1,4 +1,3 @@
-
 const menu = (()=>{
 
     const m1 = document.createElement('a')
@@ -13,11 +12,9 @@ const menu = (()=>{
     m3.innerText = 'Pizza';
     m3.href = '#'
     
-const mainContent = document.getElementById("content");
-mainContent.appendChild(m1);
-mainContent.appendChild(m2);
-mainContent.appendChild(m3);
+    const elements = [m1,m2,m3]
 
+    return {elements}
 })();
 
-export default menu;
+export default menu.elements

@@ -8,10 +8,9 @@ const about = (()=>{
     const c2 = document.createElement('h2')
     c2.innerText = 'Phone: 000-0000-000 ';
     
-const mainContent = document.getElementById("content");
-mainContent.appendChild(c1);
-mainContent.appendChild(c2);
+    const elements = [c1,c2];
 
+    return {elements}
 })();
 
-export default about;
+export default about.elements;
